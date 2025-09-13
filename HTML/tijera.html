@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="/Estilos/tijra.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Piedra, Papel o Tijera</h1>
+        <div class="score-board">
+            <div class="score-section player-score">
+                <h2>Tú</h2>
+                <span id="player-score">0</span>
+            </div>
+            <div class="score-section computer-score">
+                <h2>Computadora</h2>
+                <span id="computer-score">0</span>
+            </div>
+        </div>
+
+        <div class="result-display">
+            <p id="result-message">¡Elige tu movimiento!</p>
+            <p id="choices-message"></p>
+        </div>
+
+        <div class="choices-container">
+            <button id="piedra" class="choice-btn">Piedra</button>
+            <button id="papel" class="choice-btn">Papel</button>
+            <button id="tijera" class="choice-btn">Tijera</button>
+        </div>
+
+        <button id="reset-btn" class="reset-btn">Reiniciar</button>
+    </div>
+
+    <script src="/JavaScrip/tijera.js"></script>
+</body>
+</html>

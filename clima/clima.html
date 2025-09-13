@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/Estilos/clima.css ">
+</head>
+<body>
+    <!-- Partículas animadas para efectos de clima -->
+    <div class="weather-particles">
+        <div class="rain-drops"></div>
+        <div class="snow-flakes"></div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1>🌤️ Mi Clima</h1>
+        </header>
+
+        <!-- Spinner de carga -->
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            <p>Obteniendo ubicación y clima...</p>
+        </div>
+
+        <!-- Formulario de búsqueda por ciudad (backup) -->
+        <div id="searchForm" class="search-form hidden">
+            <h3>Buscar clima por ciudad</h3>
+            <div class="search-container">
+                <input type="text" id="cityInput" placeholder="Ingresa nombre de ciudad...">
+                <button id="searchBtn">🔍 Buscar</button>
+            </div>
+        </div>
+
+        <!-- Tarjeta principal del clima -->
+        <div id="weatherCard" class="weather-card hidden">
+            <div class="weather-header">
+                <h2 id="cityName">Ciudad</h2>
+                <p id="currentDate"></p>
+            </div>
+            
+            <div class="weather-main">
+                <div class="temperature-section">
+                    <span id="temperature">--°C</span>
+                    <div class="weather-icon" id="weatherIcon">🌤️</div>
+                </div>
+                <p id="description">Descripción del clima</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="detail-item">
+                    <span class="label">Sensación térmica</span>
+                    <span id="feelsLike">--°C</span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Humedad</span>
+                    <span id="humidity">--%</span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Viento</span>
+                    <span id="windSpeed">-- km/h</span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Presión</span>
+                    <span id="pressure">-- hPa</span>
+                </div>
+            </div>
+
+            <button id="refreshBtn" class="refresh-btn">🔄 Actualizar</button>
+        </div>
+
+        <!-- Mensaje de error -->
+        <div id="errorMessage" class="error-message hidden">
+            <h3>❌ Error</h3>
+            <p id="errorText"></p>
+            <button id="tryAgainBtn">Intentar de nuevo</button>
+        </div>
+    </div>
+
+    <script src="/JavaScrip/clima..js"></script>
+</body>
+</html>

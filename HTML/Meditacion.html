@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindful - Tu App de Meditación</title>
+    <link rel="stylesheet" href="/Estilos/Meditacion.css">
+</head>
+<body>
+    <!-- Header semántico -->
+    <header>
+        <nav>
+            <a href="#" class="logo">🧘‍♀️ Mindful</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#caracteristicas">Características</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección hero -->
+    <section class="hero" id="inicio">
+        <div class="hero-content">
+            <h1>Encuentra tu paz interior</h1>
+            <p>Mindful es la app de meditación que te ayudará a reducir el estrés y encontrar el equilibrio que necesitas.</p>
+            <a href="#contacto" class="cta-button">Comienza tu viaje</a>
+        </div>
+    </section>
+
+    <!-- Características -->
+    <section class="features" id="caracteristicas">
+        <div class="container">
+            <h2 class="section-title">¿Por qué elegir Mindful?</h2>
+            <div class="features-grid">
+                <article class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Meditaciones guiadas</h3>
+                    <p>Más de 200 meditaciones para diferentes niveles. Encuentra la práctica perfecta para ti.</p>
+                </article>
+                
+                <article class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Seguimiento de progreso</h3>
+                    <p>Monitorea tu progreso diario y celebra tus logros en el camino hacia una vida más mindful.</p>
+                </article>
+                
+                <article class="feature-card">
+                    <div class="feature-icon">🌙</div>
+                    <h3>Sonidos relajantes</h3>
+                    <p>Biblioteca de sonidos naturales para acompañar tus sesiones y ayudarte a dormir mejor.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="contact" id="contacto">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2>¿Listo para transformar tu vida?</h2>
+                <p>Únete a miles de usuarios que han descubierto los beneficios de la meditación. Prueba gratuita de 7 días.</p>
+                <p>✅ Sin compromisos • ✅ Cancela cuando quieras • ✅ Acceso completo</p>
+            </div>
+            
+            <!-- Formulario con validación -->
+            <form class="contact-form" id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Nombre completo *</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="nameError">Por favor, ingresa tu nombre completo</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="emailError">Por favor, ingresa un correo válido</div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mensaje *</label>
+                    <textarea id="message" name="message" placeholder="Cuéntanos qué te interesa más..." required></textarea>
+                    <div class="error-message" id="messageError">Por favor, escribe un mensaje</div>
+                </div>
+                
+                <button type="submit" class="subscribe-button" id="subscribeBtn">
+                    🧘‍♀️ Suscríbete ahora
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#privacidad">Privacidad</a>
+                <a href="#terminos">Términos</a>
+                <a href="#soporte">Soporte</a>
+            </div>
+            <p>&copy; 2024 Mindful App. Hecho con 💜 para tu bienestar.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de éxito -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <h3>¡Bienvenido a Mindful! 🎉</h3>
+            <p>Gracias por suscribirte. Te hemos enviado los detalles de tu prueba gratuita.</p>
+            <button class="close-modal" onclick="closeModal()">Comenzar mi viaje</button>
+        </div>
+    </div>
+
+    <script src="/JavaScrip/Meditacion.js"></script>
+</body>
+</html>

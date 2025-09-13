@@ -1,0 +1,33 @@
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Juego de Memoria - Matching Game</title>
+    <link rel="stylesheet" href="/Estilos/juego de cartas.css" />
+</head>
+<body>
+    <main>
+        <h1>Juego de Memoria</h1>
+        <div class="game-info">
+            <div>Intentos: <span id="attempts">0</span></div>
+            <div>Tiempo: <span id="timer">00:00</span></div>
+            <button id="restartBtn">Reiniciar</button>
+        </div>
+
+        <!-- Contenedor de cartas en cuadrícula -->
+        <section class="game-board" id="gameBoard">
+            <!-- Las cartas se generarán dinámicamente con JS -->
+        </section>
+
+        <!-- Mensaje de victoria -->
+        <div id="victoryMessage" class="hidden">
+            <h2>¡Felicidades! 🎉</h2>
+            <p>Completaste el juego en <span id="finalTime"></span> con <span id="finalAttempts"></span> intentos.</p>
+            <button id="playAgainBtn">Jugar de nuevo</button>
+        </div>
+    </main>
+
+    <script src="/JavaScrip/juego de cartas.js"></script>
+</body>
+</html>

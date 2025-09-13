@@ -1,0 +1,57 @@
+/* Tu código original */
+h1{
+    color:brown;
+}
+h2{
+    color: rgba(0, 89, 255, 0.774);
+}
+h3 {
+    color: blue;
+}
+h4{
+    color: blueviolet;
+}
+p{
+    color: aquamarine;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Código agregado para centrar como la imagen */
+body {
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background-color: #888888;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    margin: 0 10px;
+}
+
+input {
+    margin: 5px;
+    padding: 5px;
+}
