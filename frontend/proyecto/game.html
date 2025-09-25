@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinosaurio Corredor</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Las aventuras de Pepe el Pollo</h1>
+        <canvas id="gameCanvas"></canvas>
+        <div class="hud">
+            <div class="hud-item" id="level-display">Nivel: 1</div>
+            <div class="hud-item" id="score-display">Puntaje: 0</div>
+            <div class="hud-item" id="high-score-display">Máximo: 0</div>
+        </div>
+        <div class="leaderboard mt-8">
+            <h3>Mejores Puntuaciones</h3>
+            <ol id="leaderboard-list"></ol>
+        </div>
+    </div>
+
+    <div id="gameOverScreen" class="game-over-screen">
+        <h2>Game Over</h2>
+        <p>Tu puntaje final: <span id="finalScore">0</span></p>
+        <div class="form-group">
+            <input type="text" id="playerNameInput" placeholder="Tu nombre" maxlength="15">
+            <button id="saveScoreBtn" class="btn">Guardar Puntaje</button>
+        </div>
+        <button id="restartBtn" class="btn">Reiniciar</button>
+    </div>
+
+    <div id="messageModal" class="modal-message">
+        <div class="modal-content">
+            <p id="messageText"></p>
+            <button id="closeModalBtn" class="btn">Cerrar</button>
+        </div>
+    </div>
+    
+    <script type="module" src="api.js"></script>
+    <script type="module" src="game.js"></script>
+</body>
+</html>

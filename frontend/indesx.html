@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Integrador - RunnerJS</title>
+    <link rel="stylesheet" href="/frontend/styl.css">
+</head>
+<body>
+    <header>
+        <nav>
+           
+            <a href="">💻 Prácticas</a>
+            <a href="/frontend/proyecto/game.html">🎮  Juego</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>🚀 Proyecto Integrador RunnerJS</h1>
+        
+        <section id="practicas">
+            <h2>📚 Mis Prácticas de Desarrollo</h2>
+            <div class="card-container">
+                <a href="./Proyectos/pagina web/PaguinaWeb.html" class="card">
+                    <div class="practice-number">1</div>
+                    <h3>🌟 Mi Primera Página</h3>
+                    <p>El comienzo de mi aventura en el desarrollo web. Una página básica donde aprendí los fundamentos de HTML y CSS.</p>
+                </a>
+                
+                <a href="./Proyectos/presentacion/Presentacion.html" class="card">
+                    <div class="practice-number">2</div>
+                    <h3>👋 Página de Presentación</h3>
+                    <p>Una presentación personal donde muestro mis habilidades y conocimientos adquiridos en programación web.</p>
+                </a>
+                
+                <a href="./Proyectos/Juego/juego de cartas.html" class="card">
+                    <div class="practice-number">3</div>
+                    <h3>🧠 Juego de Memorama</h3>
+                    <p>Un divertido juego de memoria donde debes encontrar todos los pares de cartas. Desarrollado con JavaScript puro.</p>
+                </a>
+                
+                <a href="./Proyectos/meditacion/Meditacion.html" class="card">
+                    <div class="practice-number">4</div>
+                    <h3>🧘 Portal de Relajación</h3>
+                    <p>Una aplicación web para inscribirse a encuentros de meditación y relajamiento. Incluye formularios interactivos.</p>
+                </a>
+                
+                <a href="./Proyectos/clima/clima.html" class="card">
+                    <div class="practice-number">5</div>
+                    <h3>🌤️ App del Clima</h3>
+                    <p>Una aplicación que muestra el clima actual de tu ubicación utilizando APIs externas y geolocalización.</p>
+                </a>
+                
+                <a href="./Proyectos/tijeras-piedra-papel/tijera.html" class="card">
+                    <div class="practice-number">6</div>
+                    <h3>✂️ Piedra, Papel o Tijera</h3>
+                    <p>El clásico juego implementado con JavaScript. Juega contra la computadora y pon a prueba tu suerte.</p>
+                </a>
+                
+                <a href="./Proyectos/paguina 1/Practica_1.html" class="card">
+                    <div class="practice-number">9</div>
+                    <h3>📝 Práctica Avanzada</h3>
+                    <p>Una práctica más avanzada donde aplico conceptos más complejos de desarrollo web y programación.</p>
+                </a>
+                
+                <a href="./proyecto/game.html" class="card special-card" id="juego">
+                    <h3>🎮 ¡JUGAR AHORA!</h3>
+                    <p>¡Experimenta mi versión del famoso Subway Surfers! Un juego de navegador desarrollado con JavaScript puro.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Efecto de scroll suave para la navegación
+        document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Efecto de parallax sutil en el scroll
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallax = document.querySelector('body');
+            const speed = scrolled * 0.5;
+            
+            parallax.style.backgroundPosition = `center ${speed}px`;
+        });
+
+        // Animación adicional para las cards al hacer hover
+        document.querySelectorAll('.card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

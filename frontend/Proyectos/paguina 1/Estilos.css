@@ -22,7 +22,7 @@ body {
     color: #fff;
     min-height: 100vh;
     background: linear-gradient(0deg, rgba(35,28,28,.15), rgba(255,220,220,.08)), 
-    url("imagenes/imagen15.jpg") center/cover fixed;
+    url("/frontend/Proyectos/imagenes/imagen15.jpg") center/cover fixed;
     display: flex;
     align-items: center;
     justify-content: center;
